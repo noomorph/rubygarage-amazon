@@ -5,52 +5,52 @@ Homework. Amazon.
 
 #### Book
 
-* Should contain title, descirption, price and how many books in stock
+* ~~Should contain title, descirption, price and how many books in stock~~
 * Should belong to author and category
 * Should have many ratings from costomers
 
 #### Category
 
-* Has a title
+* ~~Has a title~~
 * Should have many books
 
 #### Author
 
-* Should contain firstname, lastname, photo, biography
+* Should contain ~~firstname~~, ~~lastname~~, photo, ~~biography~~
 * Should have many books
 
 #### Rating
 
-* Should contain text review and rating number from one to ten
+* ~~Should contain text review and rating number from one to ten~~
 * Should belong to customer and book
 
 #### Customer
 
-* Should contain email, password, firstname, lastname
+* ~~Should contain email, password, firstname, lastname~~
 * Should have many orders
 
 #### Order
 
-* Should contain total price, completed date and state (in progress/complited/shipped)
+* ~~Should contain total price, completed date and state~~ (in progress/complited/shipped)
 * Should belong to customer
 * Should have one billing address and one shipping address
 
 #### OrderItem
 
-* Should contain price and quantity
+* ~~Should contain price and quantity~~
 * Should belong to book and order
 
 #### Address
 
-* Should contain address, zipcode, city, phone, country
+* Should contain ~~address, zipcode, city, phone,~~ country
 
 #### Country
 
-* Should contain a name
+* ~~Should contain a name~~
 
 #### CreditCard
 
-* Should contain number, CVV, expiration month, expiration year, firstname, lastname
+* ~~Should contain number, CVV, expiration month, expiration year, firstname, lastname~~
 * Should belong to customer and have many orders
 
 ### MVP
