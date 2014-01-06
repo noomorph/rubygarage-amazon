@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104105141) do
+ActiveRecord::Schema.define(version: 20140106074022) do
 
   create_table "addresses", force: true do |t|
     t.string   "line1"
@@ -93,6 +93,9 @@ ActiveRecord::Schema.define(version: 20140104105141) do
     t.text     "review"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "book_id"
   end
+
+  add_index "ratings", ["book_id"], name: "index_ratings_on_book_id"
 
 end
