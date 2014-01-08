@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe Order do
   it { should belong_to :customer }
-  it { should have_one :billing_address }
-  it { should have_one :shipping_address }
+  it { should belong_to :billing_address }
+  it { should belong_to :shipping_address }
 
   it { should validate_numericality_of(:total_price).is_greater_than_or_equal_to(0) }
   it { should allow_value(nil).for :total_price }
