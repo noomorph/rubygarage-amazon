@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 20140106193308) do
 
   create_table "customers", force: true do |t|
     t.string   "email"
-    t.string   "password_digest"
+    t.text     "password_digest"
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at"
